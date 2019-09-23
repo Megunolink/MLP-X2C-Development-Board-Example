@@ -59,9 +59,11 @@ void CH_Init(TCommandHandlerContext *pContext)
 void CH_Process(TCommandHandlerContext *pContext)
 {
   int nNextCharacter;
+  
 
   while ((nNextCharacter = MLP_TryReadCharacter()) > 0)
   {
+  //printf("test");      
     if (nNextCharacter == pContext->m_chStartOfMessage)
     {
       pContext->m_achBuffer[0] = nNextCharacter;

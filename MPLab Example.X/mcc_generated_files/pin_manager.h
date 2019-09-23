@@ -65,25 +65,25 @@
 #define PULL_UP_ENABLED      1
 #define PULL_UP_DISABLED     0
 
-// get/set channel_ANA0 aliases
-#define channel_ANA0_TRIS                 TRISAbits.TRISA0
-#define channel_ANA0_LAT                  LATAbits.LATA0
-#define channel_ANA0_PORT                 PORTAbits.RA0
-#define channel_ANA0_WPU                  WPUAbits.WPUA0
-#define channel_ANA0_OD                   ODCONAbits.ODCA0
-#define channel_ANA0_ANS                  ANSELAbits.ANSA0
-#define channel_ANA0_SetHigh()            do { LATAbits.LATA0 = 1; } while(0)
-#define channel_ANA0_SetLow()             do { LATAbits.LATA0 = 0; } while(0)
-#define channel_ANA0_Toggle()             do { LATAbits.LATA0 = ~LATAbits.LATA0; } while(0)
-#define channel_ANA0_GetValue()           PORTAbits.RA0
-#define channel_ANA0_SetDigitalInput()    do { TRISAbits.TRISA0 = 1; } while(0)
-#define channel_ANA0_SetDigitalOutput()   do { TRISAbits.TRISA0 = 0; } while(0)
-#define channel_ANA0_SetPullup()          do { WPUAbits.WPUA0 = 1; } while(0)
-#define channel_ANA0_ResetPullup()        do { WPUAbits.WPUA0 = 0; } while(0)
-#define channel_ANA0_SetPushPull()        do { ODCONAbits.ODCA0 = 0; } while(0)
-#define channel_ANA0_SetOpenDrain()       do { ODCONAbits.ODCA0 = 1; } while(0)
-#define channel_ANA0_SetAnalogMode()      do { ANSELAbits.ANSA0 = 1; } while(0)
-#define channel_ANA0_SetDigitalMode()     do { ANSELAbits.ANSA0 = 0; } while(0)
+// get/set channel_ANA1 aliases
+#define channel_ANA1_TRIS                 TRISAbits.TRISA1
+#define channel_ANA1_LAT                  LATAbits.LATA1
+#define channel_ANA1_PORT                 PORTAbits.RA1
+#define channel_ANA1_WPU                  WPUAbits.WPUA1
+#define channel_ANA1_OD                   ODCONAbits.ODCA1
+#define channel_ANA1_ANS                  ANSELAbits.ANSA1
+#define channel_ANA1_SetHigh()            do { LATAbits.LATA1 = 1; } while(0)
+#define channel_ANA1_SetLow()             do { LATAbits.LATA1 = 0; } while(0)
+#define channel_ANA1_Toggle()             do { LATAbits.LATA1 = ~LATAbits.LATA1; } while(0)
+#define channel_ANA1_GetValue()           PORTAbits.RA1
+#define channel_ANA1_SetDigitalInput()    do { TRISAbits.TRISA1 = 1; } while(0)
+#define channel_ANA1_SetDigitalOutput()   do { TRISAbits.TRISA1 = 0; } while(0)
+#define channel_ANA1_SetPullup()          do { WPUAbits.WPUA1 = 1; } while(0)
+#define channel_ANA1_ResetPullup()        do { WPUAbits.WPUA1 = 0; } while(0)
+#define channel_ANA1_SetPushPull()        do { ODCONAbits.ODCA1 = 0; } while(0)
+#define channel_ANA1_SetOpenDrain()       do { ODCONAbits.ODCA1 = 1; } while(0)
+#define channel_ANA1_SetAnalogMode()      do { ANSELAbits.ANSA1 = 1; } while(0)
+#define channel_ANA1_SetDigitalMode()     do { ANSELAbits.ANSA1 = 0; } while(0)
 
 // get/set RC0 procedures
 #define RC0_SetHigh()            do { LATCbits.LATC0 = 1; } while(0)

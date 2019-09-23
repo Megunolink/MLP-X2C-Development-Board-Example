@@ -133,7 +133,7 @@ void main(void)
         {
             LastPlotTime = Now;
             
-            ADCC_StartConversion(channel_ANA0);
+            ADCC_StartConversion(channel_ANA1);
             while (!ADCC_IsConversionDone())
             {
                 // Wait for conversion to complete. 

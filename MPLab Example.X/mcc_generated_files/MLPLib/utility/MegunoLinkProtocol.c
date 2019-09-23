@@ -223,10 +223,10 @@ void MLP_Print_Double(double dValue)
 
 int MLP_TryReadCharacter()
 {
-    if ( EUSART_is_rx_ready ==0)
+    if ( EUSART_is_rx_ready() ==0)
     {
         return -1;
     }
 
-    return EUSART_Read;
+    return EUSART_Read();
 }
